@@ -1,0 +1,19 @@
+[user]
+	name = Chris Nielubowicz
+	email = cnielubowicz@mobiquityinc.com
+[color]
+	ui = auto
+[alias]
+	st = status
+	hist = log --pretty=format:\"%C(auto)%h %ad | %s%d [%an]\" --date=short --graph
+    fall = fetch -a --all
+    fp = !git fetch -a --all && git pull
+    sdiff = diff --name-only
+[core]
+	pager = less -F -X
+	excludesfile = ~/.gitignore
+[credential]
+	helper = osxkeychain
+[diff "keynote"]
+    binary = true
+    textconv = /Users/cnielubowicz/Code/keynote-to-text/keynote-to-text
